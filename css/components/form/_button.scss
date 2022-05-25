@@ -1,0 +1,23 @@
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  padding: 1rem 3rem;
+
+  background: var(--blue-500);
+  border: none;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  font-weight: 500;
+  border-radius: 50px;
+  color: var(--blue-800);
+
+  transition: .2s;
+
+  &:hover {
+    filter: brightness(.9);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  }
+}

@@ -1,0 +1,59 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+
+  background: var(--blue-50);
+
+  .login-wrapper {
+    width: 100%;
+    max-width: 500px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 3rem;
+    margin: 0 auto;
+
+    border-radius: 30px;
+    background: var(--blue-100);
+
+    h1 {
+      color: var(--blue-800);
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    input {
+      margin-top: 2rem;
+    }
+
+    .button-wrapper {
+      margin-top: 2rem;
+
+      &.b2 {
+        margin-top: .5rem;
+      }
+    } 
+
+    > p {
+      margin-top: 2rem;
+
+      color: var(--blue-800);
+      text-align: center;
+    }
+  }
+
+  .modal {
+    background-color: var(--blue-100);
+
+    h2 {
+      text-align: center;
+      color: var(--blue-800);
+    }
+
+    .button-wrapper {
+      margin-top: 1rem;
+    }
+  }
+}

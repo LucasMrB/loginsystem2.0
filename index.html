@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/dist/styles.css">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+
+<section class="login">
+  <div class="login-wrapper">
+    <form class="form-wrapper" data-form="login">
+      <h1>LOGIN</h1>
+      <span data-form="error" class="error-message hide">Usuário ou senha inválidos</span>
+      <div class="input-wrapper" data-form="nameWrapper">
+        <input data-login="login" type="text" class="input" placeholder="Login" data-form="loginInput" required>
+      </div>
+
+      <div class="input-wrapper" data-form="passwordWrapper">
+        <input data-login="password" type="password" class="input" placeholder="Password" data-form="passwordInput" required>
+      </div>
+
+      <div class="button-wrapper">
+        <button class="button">Entrar</button>
+      </div>
+    </form>
+
+    <p>Não possui uma conta?</p>
+
+    <div class="button-wrapper b2">
+      <button class="button" data-modal="open">Criar conta</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <div id="form">
+        <span class="close" data-modal="close">X</span>
+
+        <h2>Novo usuário</h2>
+        <span data-form="success" class="success-message hide">Usuário cadastrado com sucesso</span>
+        <form data-form="create">
+          <div class="input-group">
+            <input data-create="name" class="input" type="text" id="nome" name="nome" placeholder="Nome" required />
+          </div>
+
+          <div class="input-group">
+            <input data-create="login" class="input" type="text" id="login" name="login" placeholder="Login" required />
+          </div>
+
+          <div class="input-group">
+            <input data-create="email" class="input" type="email" id="email" name="email" placeholder="E-mail" required />
+          </div>
+
+          <div class="input-group">
+            <input data-create="password" class="input" type="password" id="password" name="password" placeholder="Senha" required />
+          </div>
+
+          <div class="button-wrapper">
+            <button class="button">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="./dist/main.js"></script>
+</body>
+</html>
